@@ -1,1 +1,2 @@
-web: gunicorn project.wsgi --log-file -
+web: gunicorn gfpgan.wsgi --log-file -
+worker: celery -A gfpgan worker --loglevel=info
