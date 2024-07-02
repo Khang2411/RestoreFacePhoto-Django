@@ -36,9 +36,11 @@ def inference():
     INPUT_DIR = "inputs/upload"
     OUTPUT_DIR = "results"
     oldFolder = os.getcwd()
-    os.chdir('gfpgan')
+    run_cmd("cd gfpgan")
+    # os.chdir('gfpgan')
     shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
     run_cmd("python inference_gfpgan.py -s 2 -i " + INPUT_DIR + " -o " + OUTPUT_DIR)
     shutil.rmtree(INPUT_DIR, ignore_errors=True)
-    os.chdir(oldFolder)
+    # os.chdir(oldFolder)
+    run_cmd("cd -")
     return os.path.join(OUTPUT_DIR, "1_out.jpg")
