@@ -39,6 +39,7 @@ def inference():
     OUTPUT_DIR = "results"
     oldFolder = os.getcwd()
     os.chdir('gfpgan')
+    print(os.listdir('inputs/upload'))
     shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
     run_cmd("python inference_gfpgan.py -s 2 -i " + INPUT_DIR + " -o " + OUTPUT_DIR)
     shutil.rmtree(INPUT_DIR, ignore_errors=True)
