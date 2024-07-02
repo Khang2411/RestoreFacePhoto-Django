@@ -19,6 +19,7 @@ def restore_photo(request):
     fs = FileSystemStorage("gfpgan/inputs/upload")
     filename = fs.save(myfile.name, myfile)
     uploaded_file_url = fs.url(filename)
+    print(uploaded_file_url)
     inference()
     return JsonResponse({"img_src": uploaded_file_url})
 
@@ -34,7 +35,6 @@ def run_cmd(command):
 
 def inference():
     INPUT_DIR = "inputs/upload"
-    print(os.listdir('/inputs/upload'))
     OUTPUT_DIR = "results"
     oldFolder = os.getcwd()
     os.chdir('gfpgan')
