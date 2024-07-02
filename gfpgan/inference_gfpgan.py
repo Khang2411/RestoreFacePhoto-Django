@@ -82,6 +82,7 @@ def main():
         bg_upsampler = None
 
     # ------------------------ set up GFPGAN restorer ------------------------
+    print('before loop loop')
     if args.version == '1':
         arch = 'original'
         channel_multiplier = 1
@@ -109,7 +110,7 @@ def main():
         url = 'https://github.com/TencentARC/GFPGAN/releases/download/v1.3.4/RestoreFormer.pth'
     else:
         raise ValueError(f'Wrong model version {args.version}.')
-
+    print('before loop loop 1')
     # determine model paths
     model_path = os.path.join('experiments/pretrained_models', model_name + '.pth')
     if not os.path.isfile(model_path):
@@ -127,6 +128,7 @@ def main():
 
     # ------------------------ restore ------------------------
     print('before loop')
+    print(img_list)
     for img_path in img_list:
         # read image
         print('img_path running')
