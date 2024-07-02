@@ -126,6 +126,7 @@ def main():
         bg_upsampler=bg_upsampler)
 
     # ------------------------ restore ------------------------
+    print('before loop')
     for img_path in img_list:
         # read image
         print('img_path running')
