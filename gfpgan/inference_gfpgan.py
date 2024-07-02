@@ -119,6 +119,8 @@ def main():
         # download pre-trained models from url
         model_path = url
 
+    print('before restorer')
+    
     restorer = GFPGANer(
         model_path=model_path,
         upscale=args.upscale,
@@ -127,6 +129,7 @@ def main():
         bg_upsampler=bg_upsampler)
 
     # ------------------------ restore ------------------------
+    print(restorer)
     print('before loop')
     print(img_list)
     for img_path in img_list:
