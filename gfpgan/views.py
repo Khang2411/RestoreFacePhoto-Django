@@ -42,6 +42,7 @@ def inference():
     print(os.listdir('inputs/upload'))
     shutil.rmtree(OUTPUT_DIR, ignore_errors=True)
     run_cmd("python inference_gfpgan.py -s 2 -i " + INPUT_DIR + " -o " + OUTPUT_DIR)
+    print(os.listdir('results'))
     shutil.rmtree(INPUT_DIR, ignore_errors=True)
     os.chdir(oldFolder)
     return os.path.join(OUTPUT_DIR, "1_out.jpg")
