@@ -56,6 +56,9 @@ def main():
 
     os.makedirs(args.output, exist_ok=True)
 
+    print('123')
+    print(img_list)
+    print('124')
     # ------------------------ set up background upsampler ------------------------
     if args.bg_upsampler == 'realesrgan':
         if not torch.cuda.is_available():  # CPU
