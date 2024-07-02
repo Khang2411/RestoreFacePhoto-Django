@@ -20,6 +20,7 @@ def restore_photo(request):
     filename = fs.save(myfile.name, myfile)
     uploaded_file_url = fs.url(filename)
     print(uploaded_file_url)
+    print(os.listdir('gfpgan/inputs/upload'))
     inference()
     return JsonResponse({"img_src": uploaded_file_url})
 
