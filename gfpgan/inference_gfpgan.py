@@ -72,7 +72,7 @@ def main():
         model_path = os.path.join('experiments/pretrained_models', 'GFPGANv1.3' + '.pth')
 
     print('before restorer')
-    
+    print(os.listdir('experiments/pretrained_models'))
     restorer = GFPGANer(
         model_path=os.path.join('experiments/pretrained_models', 'GFPGANv1.3' + '.pth'),
         upscale=args.upscale,
