@@ -1,4 +1,3 @@
-psycopg2==2.9.5
 absl-py==2.1.0
 addict==2.4.0
 asgiref==3.8.1
@@ -16,8 +15,8 @@ filterpy==1.4.5
 fonttools==4.53.0
 fsspec==2024.6.1
 future==1.0.0
+# -e git+https://github.com/Khang2411/RestoreFacePhoto-Django.git@5d7bec3f98c7c91f8ebf9d084cb1856370ffa112#egg=gfpgan&subdirectory=gfpgan
 grpcio==1.64.1
-gunicorn==20.1.0
 idna==3.7
 imageio==2.34.2
 importlib-metadata==8.0.0
@@ -27,7 +26,7 @@ jinja2==3.1.4
 kiwisolver==1.4.5
 lazy-loader==0.4
 llvmlite==0.43.0
-lmdb==1.4.1
+lmdb==1.5.1
 Markdown==3.6
 MarkupSafe==2.1.5
 matplotlib==3.9.0
@@ -35,10 +34,10 @@ mkl==2021.4.0
 mpmath==1.3.0
 networkx==3.2.1
 numba==0.60.0
-numpy==1.24.1
-opencv-python==3.4.18.65
+numpy==1.26.0
+opencv-python==4.10.0.84
 packaging==24.1
-pillow==10.3.0
+pillow==10.4.0
 platformdirs==4.2.2
 protobuf==4.25.3
 pyparsing==3.1.2
@@ -51,18 +50,17 @@ scipy==1.13.1
 six==1.16.0
 sqlparse==0.5.0
 sympy==1.12.1
-tb-nightly==2.18.0a20240630
+tb-nightly==2.18.0a20240703
 tbb==2021.13.0
 tensorboard-data-server==0.7.2
-tifffile==2024.6.18
+tifffile==2024.7.2
 tomli==2.0.1
-torch==2.0.1
-torchvision==0.15.2
+torch==2.3.1
+torchvision==0.18.1
 tqdm==4.66.4
 typing-extensions==4.12.2
 tzdata==2024.1
 urllib3==2.2.2
 werkzeug==3.0.3
-xformers==0.0.21
 yapf==0.40.2
 zipp==3.19.2
