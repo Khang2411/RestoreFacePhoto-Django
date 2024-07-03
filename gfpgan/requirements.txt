@@ -1,4 +1,4 @@
-basicsr>=1.4.2
+basicsr==1.4.2
 facexlib>=0.2.5
 lmdb
 numpy
@@ -7,6 +7,6 @@ pyyaml
 scipy
 tb-nightly
 torch>=1.7
-torchvision
+torchvision==0.15.2
 tqdm
 yapf

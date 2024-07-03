@@ -15,7 +15,6 @@ filterpy==1.4.5
 fonttools==4.53.0
 fsspec==2024.6.1
 future==1.0.0
-# -e git+https://github.com/Khang2411/RestoreFacePhoto-Django.git@5d7bec3f98c7c91f8ebf9d084cb1856370ffa112#egg=gfpgan&subdirectory=gfpgan
 grpcio==1.64.1
 idna==3.7
 imageio==2.34.2
@@ -55,8 +54,8 @@ tbb==2021.13.0
 tensorboard-data-server==0.7.2
 tifffile==2024.7.2
 tomli==2.0.1
-torch==2.3.1
-torchvision==0.18.1
+torch==2.0.1
+torchvision==0.15.2
 tqdm==4.66.4
 typing-extensions==4.12.2
 tzdata==2024.1
@@ -64,3 +63,4 @@ urllib3==2.2.2
 werkzeug==3.0.3
 yapf==0.40.2
 zipp==3.19.2
+gunicorn==22.0.0
