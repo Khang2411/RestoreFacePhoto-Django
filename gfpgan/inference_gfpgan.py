@@ -73,15 +73,8 @@ def main():
 
     print('before restorer')
     print(os.listdir('experiments/pretrained_models'))
-    restorer = GFPGANer(
-        model_path=os.path.join('experiments/pretrained_models', 'GFPGANv1.3' + '.pth'),
-        upscale=args.upscale,
-        arch='clean',
-        channel_multiplier=2,
-        bg_upsampler=None)
-
+        
     # ------------------------ restore ------------------------
-    print(restorer)
     print('before loop')
     print(img_list)
     for img_path in img_list:
