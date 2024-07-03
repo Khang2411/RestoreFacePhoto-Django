@@ -1,4 +1,4 @@
-psycopg2-binary~=2.9.6
+psycopg2-binary==2.9.5
 absl-py==2.1.0
 addict==2.4.0
 asgiref==3.8.1
@@ -16,7 +16,6 @@ filterpy==1.4.5
 fonttools==4.53.0
 fsspec==2024.6.1
 future==1.0.0
--e git+https://github.com/Khang2411/RestoreFacePhoto-Django.git@bf8a9ed4f2436f516b4e6b85a082e958724c0ab4#egg=gfpgan&subdirectory=gfpgan
 grpcio==1.64.1
 gunicorn==20.1.0
 idna==3.7
